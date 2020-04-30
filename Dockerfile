@@ -11,5 +11,5 @@ LABEL "com.github.actions.description"="Wraps the Serverless Framework to enable
 LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
-RUN akp add curl -o- -L https://slss.io/install | bash
+RUN npm install -g serverless
 ENTRYPOINT ["serverless"]
